@@ -1,2 +1,14 @@
-package org.launchcode;public class Hello {
+package org.launchcode;
+
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Hello, what is your name:");
+        String name = input.nextLine();
+        System.out.print("Hello " + name);
+        input.close();
+    }
 }
